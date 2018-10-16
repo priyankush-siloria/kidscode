@@ -1,0 +1,399 @@
+
+@media screen and (max-width: 1199px) {
+
+.banner-section .carousel-caption h1 {
+    font-size: 36px;
+    line-height: 46px;
+}
+.banner-section .carousel-caption .schedule-trial-btn {
+    font-size: 16px;
+    padding: 0 25px;
+}
+.contact-us-list li {
+    line-height: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.our-course-content p {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+
+	
+}
+
+
+@media screen and (max-width: 991px) {
+
+.header-action-btn li a {
+    height: 45px;
+    line-height: 44px;
+    padding: 0 30px;
+    font-size: 17px;
+}
+.main-nav {
+    padding: 25px 0;
+}
+.main-nav .brand-logo img {
+    height: 45px;
+}
+.banner-section .carousel-caption h1 {
+    font-size: 30px;
+    line-height: 38px;
+}
+.banner-section .carousel-caption .schedule-trial-btn {
+    font-size: 16px;
+    padding: 0 25px;
+    width: 240px;
+}
+.skool-code-list {
+    max-width: 100%;
+}
+.skool-code-head p br {
+	display: none;
+}
+.footer-content {
+    margin-bottom: 40px;
+}
+.footer-top {
+    padding: 40px 0 10px;
+}
+.overlay-section {
+    padding: 167px 0 50px;
+}
+.our-courses-section .row:last-child div[class*="col-lg-"]:nth-child(3n+4) {
+    clear: none;
+}
+.our-courses-section .row:last-child div[class*="col-lg-"]:nth-child(2n+3) {
+    clear: left;
+}
+
+	
+}
+
+
+@media screen and (max-width: 767px) {
+
+.site-header nav.main-nav {
+    position: relative;
+    background: #fff;
+    padding: 15px 0;
+}
+.banner-section .carousel-control {
+    display: none;
+}
+.header-action-btn li {
+    float: left;
+    vertical-align: middle;
+    padding: 0 4px;
+}
+.header-action-btn li a {
+    height: 42px;
+    line-height: 40px;
+    padding: 0 20px;
+    font-size: 15px;
+    border-color: #fff;
+    color: #f7931e;
+    background: #fff;
+}
+.learn-to-code-head h1 {
+    font-size: 26px;
+}
+.affordable-pricing-head h1 {
+    font-size: 30px;
+}
+.banner-section .carousel-caption {
+    left: 3.5%;
+    top: 22%;
+    width: 40%;
+}
+.banner-section .carousel-caption h1 {
+    font-size: 24px;
+    line-height: 32px;
+}
+.schedule-overlay-head h1 {
+    font-size: 30px;
+    margin-top: 0;
+}
+.overlay-section {
+    padding: 125px 0 50px;
+}
+.schedule-overlay-head p {
+    font-size: 20px;
+    margin: 0;
+}
+.overlay-section {
+    padding: 85px 0 45px;
+}
+.table-responsive {
+    border: none;
+}
+.header-action-btn {
+    display: none;
+}
+.site-header .header-action-btn {
+    position: absolute;
+    right: 15px;
+    top: 65px;
+    width: 275px;
+    background: #f7931e;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .25);
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+}
+.site-header .header-action-btn li {
+    width: 100%;
+    margin: 0 0 20px;
+}
+.site-header .header-action-btn.active {
+    display: block;
+}
+.banner-section .carousel-caption h1 br {
+    display: none;
+}
+.schedule-timeslots {
+    padding: 30px 25px 12px;
+}
+.schedule-timeslots-body-col:first-child {
+    font-size: 16px;
+}
+.schedule-timeslots-body-col-inner span label {
+    font-size: 16px;
+}
+.schedule-timeslots-head-col span {
+    font-size: 18px;
+}
+.header-action-btn li.courses-btn:hover a {
+    background: none;
+    color: #fff;
+}
+.header-action-btn li.schedule-trials-btn a {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #f7931e;
+}
+.header-action-btn li.schedule-trials-btn:hover a {
+    background: none;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+body {
+    transform: translate(0,0);
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+}
+body.menu-open {
+    transform: translate(-275px, 0);
+    -webkit-transform: translate(-275px, 0);
+    -moz-transform: translate(-275px, 0);
+}
+#header-action-btn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+}
+body.menu-open #header-action-btn {
+    right: -275px;
+    transform: translate(0,0);
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+}
+
+	
+}
+
+
+@media screen and (max-width: 639px) {
+
+.our-courses-section .col-lg-4 {
+    width: 100%;
+}
+.footer-top div[class*="col-lg-"] {
+    width: 100%;
+}
+.skool-code-list li {
+    font-size: 18px;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+.affordable-pricing-head h1 {
+    font-size: 26px;
+    line-height: 40px;
+}
+.affordable-price-div span {
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 68px;
+}
+.affordable-price-div {
+    padding: 20px 0;
+}
+.banner-section .carousel-caption h1 {
+    font-size: 20px;
+    line-height: 26px;
+}
+.banner-section .carousel-caption .schedule-trial-btn {
+    font-size: 15px;
+    padding: 0 25px;
+    width: auto;
+    height: 42px;
+    line-height: 42px;
+}
+.skool-code-head h1 {
+    font-size: 28px;
+}
+.our-courses-head h1 {
+    font-size: 30px;
+}
+.schedule-track-form .form-group {
+    width: 100%;
+}
+.schedule-form-section {
+    padding: 55px 0 35px;
+}
+.schedule-detail-form .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.schedule-detail-form .checkbox-input span {
+    display: block;
+}
+.schedule-timeslots {
+    width: 695px;
+}
+.schedule-overlay-head h1 {
+    font-size: 26px;
+}
+.banner-section .carousel-caption {
+    width: 45%;
+}
+div.skool-code-head {
+    width: 100%;
+}
+.thanks-message {
+    font-size: 16px;
+    padding: 20px 10px;
+}
+.our-course-content p {
+    min-height: auto;
+}
+.our-course-content h3 {
+    height: auto;
+}
+.skool-code-list li {
+    background-position: left 7px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+
+
+}
+
+
+@media screen and (max-width: 479px) {
+
+.header-action-btn ul li {
+    float: none;
+    display: inline-block;
+}
+.header-action-btn ul {
+    text-align: center;
+}
+.learn-to-code-section .col-lg-4 {
+    width: 100%;
+}
+.skool-code-head p {
+    font-size: 16px;
+}
+.banner-section .carousel-caption h1 {
+    font-size: 13px;
+    line-height: 18px;
+}
+.banner-section .carousel-caption .schedule-trial-btn {
+    font-size: 11px;
+    padding: 0px 15px;
+    height: 36px;
+    line-height: 34px;
+}
+.banner-section .carousel-caption h1 {
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0 0 3px;
+}
+.schedule-overlay-head h1 {
+    font-size: 24px;
+}
+.banner-section .carousel-caption {
+    width: 40%;
+}
+.learn-code-icon .learn-code-icon-inner img {
+    height: 39px;
+}
+.learn-code-icon .learn-code-icon-inner {
+    width: 95px;
+    height: 95px;
+    line-height: 95px;
+}
+.learn-code-icon {
+    width: 115px;
+    height: 115px;
+}
+.learn-code-service p {
+    font-size: 16px;
+}
+.skool-code-list li {
+    background-position: left 7px;
+    background-size: 20px;
+    font-size: 17px;
+    padding-left: 35px;
+}
+
+}
+
+
+@media screen and (max-width: 359px) {
+
+.banner-section .carousel-caption {
+    width: 45%;
+}
+.banner-section .carousel-caption .schedule-trial-btn {
+    font-size: 11px;
+    padding: 0px 10px;
+    height: 30px;
+    line-height: 27px;
+}
+.learn-code-icon {
+    width: 100px;
+    height: 100px;
+}
+.learn-code-icon .learn-code-icon-inner {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+}
+.learn-code-service p {
+    font-size: 14px;
+    line-height: 20px;
+}
+.learn-to-code-section {
+    padding: 70px 0 0px;
+}
+.skool-code-list li {
+    background-position: left 7px;
+    background-size: 17px;
+    font-size: 16px;
+    padding-left: 32px;
+    margin-bottom: 7px;
+}
+
+
+}
