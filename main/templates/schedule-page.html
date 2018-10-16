@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+Schedule
+{% endblock %}
+{% block content %}
+
+  	<!-- schedule-overlay-section start -->
+  	<section class="schedule-overlay-section overlay-section">
+  		<div class="container">
+  			<div class="schedule-overlay-head text-center">
+  				<h1>Schedule your trials</h1>
+  				<div class="divider clearfix">
+  					<img alt="divider-dark" border="0" src="{% static 'img/divider-dark.png' %}">
+  				</div>
+  				<p>(1 Month free trial)</p>
+  			</div>
+  		</div>
+  	</section>
+  	<!-- schedule-overlay-section end -->
+
+  	<!-- schedule-form-section start -->
+  	<section class="schedule-form-section">
+  		<div class="container">
+  			<div class="row">
+  			
+  				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-md-offset-0 col-xs-12">
+  					{% if request.GET.result %}
+	  					<div class="hide">
+	  				{% else %}
+	  					<div class="clearfix">
+	  				{% endif %}
+  					<form action="{% url 'schedule' %}" method="post" class="schedule-track-form clearfix">
+  					{% csrf_token %}
+	  					<div class="form-group">
+	  							<label>Child's Current Grade</label>
+	  							<div class="form-input">
+	  								<select name="grade" id="grade" class="select-input form-control">
+	  									<option value="3">3rd grade</option>
+	  									<option value="4">4th grade</option>
+	  									<option value="5">5th grade</option>
+	  									<option value="6">6th grade</option>
+	  									<option value="7">7th grade</option>
+	  									<option value="8">8th grade</option>
+	  									<option value="9">9th grade</option>
+	  									<option value="10">10th grade</option>
+	  									<option value="11">11th grade</option>
+	  									<option value="12">12th grade</option>
+	  								</select>
+	  							</div>
+	  						</div>
+	  						<div class="form-group">
+	  							<label>Your TimeZone</label>
+	  							<div class="form-input">
+	  								<select name="zone" id="zone" class="select-input form-control" onchange="changetime(this)">
+	  									<option value="pst">Pacific Standard Time(UTC-8)</option>
+		  								<option value="mst">Mountain Standard Time(UTC-7)</option>
+		  								<option value="cst">Central Standard Time(UTC-6)</option>
+		  								<option value="est">Eastern Standard Time(UTC-5)</option>
+		  								<option value="ist">Indian Standard Time(UTC+5:30)</option>
+	  								</select>
+	  							</div>
+	  						</div>
+	  						<div class="form-group">
+	  							<label>Parent Email</label>
+	  							<div class="form-input">
+	  								<input type="text" name="parentemail" class="form-control" required>
+	  							</div>
+	  						</div>
+	  						<div class="form-group">
+	  							<label>Parent's Contact (Optional)</label>
+	  							<div class="form-input">
+	  								<input type="text" class="form-control" name="phone">
+	  							</div>
+	  						</div>
+	  						<div class="form-group">
+	  							<label>Day1 Preference</label>
+	  							<div class="form-input">
+	  								<select class="select-input form-control" name="done" id="done" required>
+	  									<option value="">Select Day</option>
+	  									<option value="mon">Monday</option>
+	  									<option value="tue">Tuesday </option>
+	  									<option value="wed">Wednesday</option>
+	  									<option value="thu">Thursday</option>
+	  									<option value="fri">Friday </option>
+	  									<option value="sat">Saturday</option>
+	  									<option value="sun">Sunday</option>
+	  								</select>
+	  							</div>
+	  						</div>
+	  						
+	  						<div class="form-group">
+	  							<label>Time Preference</label>
+	  							<div class="form-input">
+	  								<select class="select-input form-control" name="tone" id="tone" disabled required>
+	  									<option value="">Select Time</option>
+	  								</select>
+	  							</div>
+	  						</div>
+	  						<div class="form-group">
+	  							<label>Day2 Preference</label>
+	  							<div class="form-input">
+	  								<select class="select-input form-control" name="dtwo" id="dtwo" required>
+	  									<option value="">Select Day</option>
+	  									<option value="mon">Monday</option>
+	  									<option value="tue">Tuesday </option>
+	  									<option value="wed">Wednesday</option>
+	  									<option value="thu">Thursday</option>
+	  									<option value="fri">Friday </option>
+	  									<option value="sat">Saturday</option>
+	  									<option value="sun">Sunday</option>
+	  								</select>
+	  							</div>
+	  						</div>
+	  						<div class="form-group">
+	  							<label>Time Preference</label>
+	  							<div class="form-input">
+	  								<select class="select-input form-control" name="ttwo" id="ttwo" disabled required>
+	  									<option value="">Select Time</option>
+	  								</select>
+	  							</div>
+	  						</div>
+	  						<div class="form-group checkbox-input">
+	  							<div class="checkbox-input">
+	  								<div class="checkbox-inner">
+	  									<input type="checkbox" name="contact">
+	  									<label></label>
+	  								</div>
+	  								<span>I consent for SkoolOfCode to contact via email Email/Phone</span>
+	  							</div>
+	  						</div>
+	  						<div class="form-group submit-form-group">
+	  							<button class="submit-btn">Submit</button>
+	  						</div>
+
+	  				</form>
+	  				</div>
+	  				<div class="clearfix">
+	  					{% if request.GET.result %}
+	  						<div class="thanks-message">
+		  				{% else %}
+		  					<div class="thanks-message hide">
+		  				{% endif %}
+	  						“Thanks for connecting. SkoolOfCode will get back to your shortly. You may also contact us at learn@skoolofcode.com”
+	  					</div>
+	  				</div>
+	  			</div>
+  			</div>
+  		</div>
+  	</section>
+  	<!-- affordable-pricing-section end-here -->
+
+  	{% endblock %}
