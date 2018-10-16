@@ -1,0 +1,137 @@
+{% if default_time.Mon %}
+<div class="schedule-timeslots-body-row">
+	<div class="schedule-timeslots-body-col">
+		Monday
+	</div>
+	<div class="schedule-timeslots-body-col">
+		<div class="schedule-timeslots-body-col-inner">
+			{% for class_time in default_time.Mon %}
+				<span>
+					<div class="checkbox-row">
+						<div class="checkbox-input">
+							<input type="checkbox" class="timeslot" name="mon" value="{{ forloop.counter }}">
+							<label>{{ class_time.0 }}</label>
+						</div>
+					</div>
+				</span>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endif %}
+<div class="schedule-timeslots-body-row">
+	<div class="schedule-timeslots-body-col">
+		Tuesday
+	</div>
+	<div class="schedule-timeslots-body-col">
+		<div class="schedule-timeslots-body-col-inner">
+			{% for class_time in default_time.Tue %}
+				<span>
+					<div class="checkbox-row">
+						<div class="checkbox-input">
+							<input type="checkbox" class="timeslot" name="tue" value="{{ forloop.counter }}">
+							<label>{{ class_time.0 }}</label>
+						</div>
+					</div>
+				</span>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<div class="schedule-timeslots-body-row">
+	<div class="schedule-timeslots-body-col">
+		Wednesday
+	</div>
+	<div class="schedule-timeslots-body-col">
+		<div class="schedule-timeslots-body-col-inner">
+			{% for class_time in default_time.Wed %}
+				<span>
+					<div class="checkbox-row">
+						<div class="checkbox-input">
+							<input type="checkbox" class="timeslot" name="wed" value="{{ forloop.counter }}">
+							<label>{{ class_time.0 }}</label>
+						</div>
+					</div>
+				</span>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<div class="schedule-timeslots-body-row">
+	<div class="schedule-timeslots-body-col">
+		Thursday
+	</div>
+	<div class="schedule-timeslots-body-col">
+		<div class="schedule-timeslots-body-col-inner">
+			{% for class_time in default_time.Thu %}
+				<span>
+					<div class="checkbox-row">
+						<div class="checkbox-input">
+							<input type="checkbox" class="timeslot" name="thu" value="{{ forloop.counter }}">
+							<label>{{ class_time.0 }}</label>
+						</div>
+					</div>
+				</span>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<div class="schedule-timeslots-body-row">
+	<div class="schedule-timeslots-body-col">
+		Friday
+	</div>
+	<div class="schedule-timeslots-body-col">
+		<div class="schedule-timeslots-body-col-inner">
+			{% for class_time in default_time.Fri %}
+				<span>
+					<div class="checkbox-row">
+						<div class="checkbox-input">
+							<input type="checkbox" class="timeslot" name="fri" value="{{ forloop.counter }}">
+							<label>{{ class_time.0 }}</label>
+						</div>
+					</div>
+				</span>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<div class="schedule-timeslots-body-row">
+	<div class="schedule-timeslots-body-col">
+		Saturday
+	</div>
+	<div class="schedule-timeslots-body-col">
+		<div class="schedule-timeslots-body-col-inner">
+			{% for class_time in default_time.Sat %}
+				<span>
+					<div class="checkbox-row">
+						<div class="checkbox-input">
+							<input type="checkbox" class="timeslot" name="sat" value="{{ forloop.counter }}">
+							<label>{{ class_time.0 }}</label>
+						</div>
+					</div>
+				</span>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% if default_time.Sun %}
+	<div class="schedule-timeslots-body-row">
+	<div class="schedule-timeslots-body-col">
+		Sunday
+	</div>
+	<div class="schedule-timeslots-body-col">
+		<div class="schedule-timeslots-body-col-inner">
+			{% for class_time in default_time.Sun %}
+				<span>
+					<div class="checkbox-row">
+						<div class="checkbox-input">
+							<input type="checkbox" class="timeslot" name="sun" value="{{ forloop.counter }}">
+							<label>{{ class_time.0 }}</label>
+						</div>
+					</div>
+				</span>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endif %}
